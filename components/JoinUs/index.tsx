@@ -1,4 +1,6 @@
-const JoinUs = () => {
+import React from 'react';
+
+const JoinUs: React.FC = () => {
   return (
     <div>
       <p>

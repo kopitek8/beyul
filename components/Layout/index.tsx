@@ -1,7 +1,12 @@
 import Navigation from '../Navigation';
 import Footer from '../Footer';
+import React from 'react';
 
-const Layout = ({ children }) => {
+interface LayoutChildren {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutChildren) => {
   return (
     <div className='content'>
       <Navigation />

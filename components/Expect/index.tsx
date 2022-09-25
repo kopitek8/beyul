@@ -1,4 +1,6 @@
-const Expect = () => {
+import React from 'react';
+
+const Expect: React.FC = () => {
   return (
     <div>
       <p>
