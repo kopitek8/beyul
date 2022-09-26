@@ -1,4 +1,6 @@
-const Plan = () => {
+import React from 'react';
+
+const Plan: React.FC = () => {
   return (
     <div>
       <p>

@@ -1,4 +1,6 @@
-const Journey = () => {
+import React from 'react';
+
+const Journey: React.FC = () => {
   return (
     <div>
       <p>

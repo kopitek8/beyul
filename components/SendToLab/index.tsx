@@ -1,4 +1,6 @@
-const SendToLab = () => {
+import React from 'react';
+
+const SendToLab: React.FC = () => {
   return (
     <div>
       <button>Send to Lab Button</button>
