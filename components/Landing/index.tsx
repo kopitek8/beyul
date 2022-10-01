@@ -1,14 +1,16 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
+import styles from '../../styles/Landing.module.css';
 
 const Landing: React.FC = () => {
   return (
-    <div>
-      <p>
-        Landing: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Distinctio consequatur ullam libero eveniet molestias esse quae
-        assumenda, laboriosam temporibus, quisquam ipsa laudantium quod mollitia
-        dolorum unde pariatur neque illo ex.
-      </p>
+    <div className={styles.banner}>
+      <Parallax speed={30}>
+        <div className={styles.cloud}></div>
+      </Parallax>
+      <Parallax speed={80}>
+        <div className={styles.person}></div>
+      </Parallax>
     </div>
   );
 };
