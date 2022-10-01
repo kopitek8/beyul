@@ -1,0 +1,19 @@
+.itinerary {
+  flex: 1;
+  background-image: url('../public/assets/itinerary.jpg');
+  background-size: cover;
+  max-width: 100%;
+  height: 50rem;
+}
+
+@media (orientation: landscape) {
+  .itinerary {
+    background-image: url('../public/assets/itinerary.jpg');
+  }
+}
+
+@media (orientation: portrait) {
+  .itinerary {
+    background-image: url('../public/assets/itinerary-mobile.jpg');
+  }
+}
