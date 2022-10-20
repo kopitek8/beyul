@@ -6,41 +6,44 @@ import bonfire from '../../public/assets/Expect/bonfire.png';
 import camping from '../../public/assets/Expect/camping-trek.png';
 import dining from '../../public/assets/Expect/dining.png';
 import guide from '../../public/assets/Expect/guide.png';
+import route from '../../public/assets/Expect/route.png';
+import village from '../../public/assets/Expect/village.jpg';
+import sceneries from '../../public/assets/Expect/sceneries.jpg';
 
 const expectArr = [
-  {
-    src: bonfire,
-    alt: 'Campfire Every Night',
-  },
   {
     src: camping,
     alt: 'Outdoor Camping',
   },
   {
+    src: bonfire,
+    alt: 'Campfire Every Night',
+  },
+  {
     src: dining,
     alt: 'Five Billion Star Winning and Dining',
+  },
+  {
+    src: route,
+    alt: 'Off the Map Trekking Route',
   },
   {
     src: guide,
     alt: 'Classy Guide and Security',
   },
   {
-    src: bonfire,
-    alt: 'Campfire Every Night',
+    src: sceneries, // NEED PNG
+    alt: 'Breathtaking Sceneries',
   },
   {
-    src: camping,
-    alt: 'Outdoor Camping',
-  },
-  {
-    src: dining,
-    alt: 'Five Billion Star Winning and Dining',
+    src: village, // NEED PNG
+    alt: '75% of Money Goes to the Village',
   },
 ];
 
 const renderItem = (key, src, alt) => {
   return (
-    <div>
+    <div className={styles.item}>
       <Image
         key={key}
         src={src}
@@ -50,7 +53,7 @@ const renderItem = (key, src, alt) => {
         height={300}
         width={300}
       ></Image>
-      <p>{alt}</p>
+      <p className={styles.description}>{alt}</p>
     </div>
   );
 };
