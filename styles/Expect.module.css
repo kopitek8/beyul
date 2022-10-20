@@ -18,7 +18,17 @@
   flex: auto;
   /* background-color: aqua; */
   text-align: center;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+}
+
+.item {
+  flex-basis: 20%;
+}
+
+.description {
+  font-size: 21px;
 }
