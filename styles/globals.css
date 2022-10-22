@@ -30,6 +30,10 @@ h2 {
 p {
   color: #871514;
 }
+
+button {
+  font-family: yatra;
+}
 /* 
 a {
   color: inherit;
