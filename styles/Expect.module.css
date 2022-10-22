@@ -16,7 +16,6 @@
 .imageContainer {
   display: flex;
   flex: auto;
-  /* background-color: aqua; */
   text-align: center;
   flex-wrap: wrap;
   width: 100%;
