@@ -1,0 +1,23 @@
+.container {
+  background-image: url('../public/assets/Plan/burn-paper.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  height: 50rem;
+  place-items: center;
+}
+
+.contentContainer {
+  padding: 4%;
+  margin: 0% 2% 0% 2%;
+}
+
+.content {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  padding: 2.5%;
+  text-align: center;
+  font-size: 23pt;
+}
