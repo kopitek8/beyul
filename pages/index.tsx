@@ -8,6 +8,9 @@ import Journey from '../components/Journey';
 import SendToLab from '../components/SendToLab';
 import JoinUs from '../components/JoinUs';
 
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -18,12 +21,14 @@ const Home: NextPage = () => {
       </Head>
 
       <div>
-        <Landing />
+        {/* <Landing />
         <Expect />
         <Plan />
         <Journey />
         <SendToLab />
-        <JoinUs />
+        <JoinUs /> */}
+
+        <Footer />
       </div>
     </div>
   );
