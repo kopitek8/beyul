@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../../styles/Expect.module.css';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import bonfire from '../../public/assets/Expect/bonfire.png';
 import camping from '../../public/assets/Expect/camping-trek.png';
@@ -41,9 +41,9 @@ const expectArr = [
   },
 ];
 
-const renderItem = (key, src, alt) => {
+const renderItem = (key: number, src: StaticImageData, alt: string) => {
   return (
-    <div className={styles.item}>
+    <div className={styles.item} key={key}>
       <Image
         key={key}
         src={src}

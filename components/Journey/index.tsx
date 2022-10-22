@@ -19,7 +19,12 @@ const Journey: React.FC = () => {
   // };
 
   //Function to find the mouse coordinates when hovering over the journey image
-  const handleMe = (e) => {
+  interface MouseInterface {
+    clientX: number;
+    clientY: number;
+  }
+
+  const handleMe = (e: MouseInterface) => {
     var a = e.clientX;
     var b = e.clientY;
 
