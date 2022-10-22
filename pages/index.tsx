@@ -8,13 +8,16 @@ import Journey from '../components/Journey';
 import SendToLab from '../components/SendToLab';
 import JoinUs from '../components/JoinUs';
 
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Beyul</title>
         <meta name='description' content='Beyul website' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.png' />
       </Head>
 
       <div>
@@ -24,6 +27,8 @@ const Home: NextPage = () => {
         <Journey />
         <SendToLab />
         <JoinUs />
+
+        {/* <Footer /> */}
       </div>
     </div>
   );

@@ -1,0 +1,25 @@
+.container {
+  height: 300px;
+  width: 100%;
+  background-color: azure;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.getInTouch {
+  background-color: pink;
+}
+
+.aboutUs {
+  background-color: red;
+}
+
+.contactItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
