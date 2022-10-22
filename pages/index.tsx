@@ -21,14 +21,14 @@ const Home: NextPage = () => {
       </Head>
 
       <div>
-        {/* <Landing />
+        <Landing />
         <Expect />
         <Plan />
         <Journey />
         <SendToLab />
-        <JoinUs /> */}
+        <JoinUs />
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
