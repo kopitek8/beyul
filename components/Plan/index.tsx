@@ -15,13 +15,13 @@ const Plan: React.FC = () => {
           crossing threshold after threshold, Kalinchowk to Seti, achieving
           inner and outer feats, submerged in earthly delights in a state of
           bliss, following myths (transcendence) on a 16th century salt route,
-          witnessing the creator's manifestation in the people, the culture, the
-          silent ways of the ancient, ultimately, recognizing the divine in us
-          and all around with a rapture of being alive. You will be a visiting
-          diety in the Bigu village, and you will know with the way they treat
-          you, its hospitality, comes out of recognition, with Beyül, you will
-          experience a festival of feelings within and around, with the ways of
-          the modern and the ancient, in harmony.
+          witnessing the creator&apos;s manifestation in the people, the
+          culture, the silent ways of the ancient, ultimately, recognizing the
+          divine in us and all around with a rapture of being alive. You will be
+          a visiting diety in the Bigu village, and you will know with the way
+          they treat you, its hospitality, comes out of recognition, with Beyül,
+          you will experience a festival of feelings within and around, with the
+          ways of the modern and the ancient, in harmony.
         </p>
       </div>
     </div>
