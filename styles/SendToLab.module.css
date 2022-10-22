@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8% 0% 8% 0%;
+}
+
+.button {
+  background-image: url('../public/assets/Lab/stone.jpg');
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: silver;
+  font-size: 38pt;
+}
