@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../styles/JoinUs.module.css';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import skill from '../../public/assets/JoinUs/skill.png';
 
@@ -15,9 +15,9 @@ const expectArr = [
   },
 ];
 
-const renderItem = (key, src, alt) => {
+const renderItem = (key: number, src: StaticImageData, alt: string) => {
   return (
-    <div className={styles.item}>
+    <div className={styles.item} key={key}>
       <Image
         key={key}
         src={src}
