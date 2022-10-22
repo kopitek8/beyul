@@ -52,7 +52,7 @@ const renderItem = (key, src, alt) => {
         objectFit='contain'
         height={300}
         width={300}
-      ></Image>
+      />
       <p className={styles.description}>{alt}</p>
     </div>
   );
