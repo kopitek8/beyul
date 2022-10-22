@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styles from '../../styles/Expect.module.css';
 import Image, { StaticImageData } from 'next/image';
 
-import bonfire from '../../public/assets/Expect/bonfire.png';
 import camping from '../../public/assets/Expect/camping-trek.png';
 import dining from '../../public/assets/Expect/dining.png';
 import guide from '../../public/assets/Expect/guide.png';
@@ -14,10 +13,6 @@ const expectArr = [
   {
     src: camping,
     alt: 'Outdoor Camping',
-  },
-  {
-    src: bonfire,
-    alt: 'Campfire Every Night',
   },
   {
     src: dining,
