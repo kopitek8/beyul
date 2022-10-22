@@ -27,8 +27,6 @@ const Home: NextPage = () => {
         <Journey />
         <SendToLab />
         <JoinUs />
-
-        {/* <Footer /> */}
       </div>
     </div>
   );

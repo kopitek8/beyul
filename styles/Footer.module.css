@@ -1,25 +1,62 @@
 .container {
+  padding: 10% 0% 2% 0%;
+}
+
+.footerContentContainer {
   height: 300px;
   width: 100%;
-  background-color: azure;
   display: flex;
+  flex: auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .getInTouch {
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  gap: 20px;
 }
 
 .aboutUs {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 34%;
 }
 
 .contactItem {
   display: flex;
+  flex: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+}
+
+.getInTouchDescription {
+  font-size: 14pt;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28pt;
+}
+
+.beyulLogoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5% 0% 0% 0%;
 }
