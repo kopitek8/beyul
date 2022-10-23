@@ -62,7 +62,12 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className={styles.beyulLogoContainer}>
-        <Image src={beyulLogo} alt={'Beyul Logo'} height={160} width={410} />
+        <Image
+          src={beyulLogo}
+          alt={'Beyul Logo'}
+          layout={'fill'}
+          className={styles.beyulImage}
+        />
       </div>
     </div>
   );

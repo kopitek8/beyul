@@ -1,9 +1,12 @@
 .container {
-  padding: 10% 0% 2% 0%;
+  padding: 4% 0% 2% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footerContentContainer {
-  height: 300px;
   width: 100%;
   display: flex;
   flex: auto;
@@ -16,7 +19,7 @@
   display: flex;
   flex-direction: column;
   width: 26%;
-  gap: 20px;
+  gap: 1vw;
 }
 
 .aboutUs {
@@ -44,7 +47,7 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 
 .beyulLogoContainer {
@@ -53,6 +56,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2%;
+}
+
+.beyulLogoContainer {
+  width: 80vw;
+  height: 15vh;
+  position: relative;
+}
+
+.beyulImage {
+  object-fit: contain;
   width: 100%;
-  padding: 5% 0% 0% 0%;
+  height: 100%;
+  position: relative !important;
 }
