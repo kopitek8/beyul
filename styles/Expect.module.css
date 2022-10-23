@@ -24,26 +24,3 @@
   align-items: center;
   gap: 25px;
 }
-
-.item {
-  width: 20vw;
-  flex-basis: 30%;
-}
-
-.imageItemContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2%;
-  height: 15vh;
-  position: relative;
-}
-
-.imageItem {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  position: relative !important;
-}
