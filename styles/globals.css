@@ -46,6 +46,32 @@ span {
 button {
   font-family: yatra;
 }
+
+@media (orientation: portrait) {
+  h1 {
+    font-size: 7vw;
+    /* color: #871514; */
+  }
+
+  h2 {
+    font-size: 6vw;
+    /* color: #871514; */
+  }
+
+  h3 {
+    font-size: 5vw;
+    /* color: #871514; */
+  }
+
+  p {
+    /* color: #871514; */
+    font-size: 4vw;
+  }
+
+  span {
+    font-size: 1.7vw;
+  }
+}
 /* 
 a {
   color: inherit;
