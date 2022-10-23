@@ -21,27 +21,27 @@ const Footer: React.FC = () => {
         <div className={styles.getInTouch}>
           <div className={styles.contactItem}>
             <FaMapMarkerAlt className={styles.logo} />
-            <p>
+            <span>
               21st Revolution Street <br /> London, England
-            </p>
+            </span>
           </div>
           <div className={styles.contactItem}>
             <FaPhoneAlt className={styles.logo} />
-            <p>+1 7874-9921-21</p>
+            <span>+1 7874-9921-21</span>
           </div>
           <div className={styles.contactItem}>
             <FaEnvelope className={styles.logo} />
-            <p>getintouch@beyul.com</p>
+            <span>getintouch@beyul.com</span>
           </div>
         </div>
         <div className={styles.aboutUs}>
           <h3>About Beyül</h3>
-          <p>
+          <span>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
             porro autem, nisi voluptate sunt numquam repellat iure veritatis
             sequi itaque earum optio similique alias, doloremque, esse impedit
             quod fuga maxime!
-          </p>
+          </span>
           <div className={styles.socialLinks}>
             <Link href='/'>
               <IoLogoFacebook className={styles.logo} />
