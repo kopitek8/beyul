@@ -68,3 +68,9 @@
   height: 100%;
   position: relative !important;
 }
+
+@media (orientation: portrait) {
+  .logo {
+    font-size: 3vw;
+  }
+}
