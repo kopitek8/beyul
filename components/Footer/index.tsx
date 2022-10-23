@@ -21,17 +21,17 @@ const Footer: React.FC = () => {
         <div className={styles.getInTouch}>
           <div className={styles.contactItem}>
             <FaMapMarkerAlt className={styles.logo} />
-            <p className={styles.getInTouchDescription}>
+            <p>
               21st Revolution Street <br /> London, England
             </p>
           </div>
           <div className={styles.contactItem}>
             <FaPhoneAlt className={styles.logo} />
-            <p className={styles.getInTouchDescription}>+1 7874-9921-21</p>
+            <p>+1 7874-9921-21</p>
           </div>
           <div className={styles.contactItem}>
             <FaEnvelope className={styles.logo} />
-            <p className={styles.getInTouchDescription}>getintouch@beyul.com</p>
+            <p>getintouch@beyul.com</p>
           </div>
         </div>
         <div className={styles.aboutUs}>

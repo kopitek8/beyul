@@ -48,7 +48,7 @@ const renderItem = (key: number, src: StaticImageData, alt: string) => {
         height={300}
         width={300}
       />
-      <p className={styles.description}>{alt}</p>
+      <p>{alt}</p>
     </div>
   );
 };

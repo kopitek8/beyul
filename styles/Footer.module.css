@@ -34,10 +34,6 @@
   align-items: center;
 }
 
-.getInTouchDescription {
-  font-size: 14pt;
-}
-
 .socialLinks {
   display: flex;
   flex-direction: row;
@@ -48,7 +44,7 @@
 }
 
 .logo {
-  font-size: 28pt;
+  font-size: 1.5rem;
 }
 
 .beyulLogoContainer {
