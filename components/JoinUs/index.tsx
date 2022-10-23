@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../../styles/JoinUs.module.css';
-import Image, { StaticImageData } from 'next/image';
 
 import skill from '../../public/assets/JoinUs/skill.png';
+
+import renderItem from '../Reusable/ImageDescription';
 
 const expectArr = [
   {
@@ -14,22 +15,6 @@ const expectArr = [
     alt: 'Skill Share',
   },
 ];
-
-const renderItem = (key: number, src: StaticImageData, alt: string) => {
-  return (
-    <div className={styles.item} key={key}>
-      <Image
-        key={key}
-        src={src}
-        alt={alt}
-        objectFit='contain'
-        height={300}
-        width={300}
-      />
-      <p className={styles.description}>{alt}</p>
-    </div>
-  );
-};
 
 const JoinUs: React.FC = () => {
   return (
