@@ -19,28 +19,28 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5vw;
   color: #871514;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4vw;
   color: #871514;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3vw;
   color: #871514;
 }
 
 p {
   color: #871514;
-  font-size: 1.5rem;
+  font-size: 1.6vw;
 }
 
 span {
   color: #871514;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 button {
