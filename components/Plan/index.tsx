@@ -9,9 +9,9 @@ const Plan: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.contentContainer}>
         <h2>the plan</h2>
-        <p className={styles.content}>
+        <span className={styles.content}>
           We take you through a revolution where you are breaking through your
-          physical struggle, navigating the Gaurishankar Conservation Area
+          spanhysical struggle, navigating the Gaurishankar Conservation Area
           crossing threshold after threshold, Kalinchowk to Seti, achieving
           inner and outer feats, submerged in earthly delights in a state of
           bliss, following myths (transcendence) on a 16th century salt route,
@@ -22,7 +22,7 @@ const Plan: React.FC = () => {
           they treat you, its hospitality, comes out of recognition, with Beyül,
           you will experience a festival of feelings within and around, with the
           ways of the modern and the ancient, in harmony.
-        </p>
+        </span>
       </div>
     </div>
   );
