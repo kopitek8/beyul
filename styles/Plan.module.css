@@ -1,23 +1,31 @@
 .container {
   background-image: url('../public/assets/Plan/burn-paper.png');
   background-size: contain;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  display: grid;
-  height: 50rem;
+  display: flex;
+  flex-wrap: wrap;
   place-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 0% 5% 0%;
 }
 
 .contentContainer {
-  padding: 0% 5% 1% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 10% 4% 10%;
   margin: 0% 3% 0% 3%;
+  overflow: hidden;
+}
+
+.title {
+  margin: 7% 7% 0% 7%;
 }
 
 .content {
   display: flex;
-  flex: auto;
   flex-wrap: wrap;
-  padding: 2.5%;
+  padding: 4%;
   text-align: center;
-  font-size: 23pt;
 }
