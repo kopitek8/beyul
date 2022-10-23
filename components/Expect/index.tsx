@@ -43,7 +43,6 @@ const renderItem = (key: number, src: StaticImageData, alt: string) => {
         key={key}
         src={src}
         alt={alt}
-        // layout='fill'
         objectFit='contain'
         height={300}
         width={300}
