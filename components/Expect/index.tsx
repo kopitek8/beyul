@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from '../../styles/Expect.module.css';
-import Image, { StaticImageData } from 'next/image';
 
 import camping from '../../public/assets/Expect/camping-trek.png';
 import dining from '../../public/assets/Expect/dining.png';
@@ -8,6 +7,8 @@ import guide from '../../public/assets/Expect/guide.png';
 import route from '../../public/assets/Expect/route.png';
 import village from '../../public/assets/Expect/village.jpg';
 import sceneries from '../../public/assets/Expect/sceneries.jpg';
+
+import renderItem from '../Reusable/ImageDescription';
 
 const expectArr = [
   {
@@ -35,22 +36,6 @@ const expectArr = [
     alt: '75% of Money Goes to the Village',
   },
 ];
-
-const renderItem = (key: number, src: StaticImageData, alt: string) => {
-  return (
-    <div className={styles.item} key={key}>
-      <Image
-        key={key}
-        src={src}
-        alt={alt}
-        objectFit='contain'
-        height={300}
-        width={300}
-      />
-      <p>{alt}</p>
-    </div>
-  );
-};
 
 const Expect: React.FC = () => {
   return (
