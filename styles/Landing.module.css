@@ -72,6 +72,49 @@
   background-color: red;
 }
 
+/* Parallax div elements styling */
+
+.stars {
+  background-image: url('../public/assets/Parallax/top.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.background {
+  background-image: url('../public/assets/Parallax/middle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120vh;
+  margin: -46.9% 0% 0% 0%;
+}
+
+.logo {
+  background-image: url('../public/assets/Parallax/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+  margin: -48.3% 0% 0% 1%;
+}
+
+.post {
+  background-image: url('../public/assets/Parallax/post.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 48vh;
+  margin: -13% 0.1% 0% 20%;
+}
+
+.steps {
+  background-image: url('../public/assets/Parallax/bottom.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60vh;
+  margin: -25.4% 0% 0% 0%;
+}
+
 /* Styling for middle container */
 
 .middleContainer {

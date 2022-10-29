@@ -22,11 +22,11 @@ const Home: NextPage = () => {
 
       <div>
         <Landing />
-        {/* <Expect />
+        <Expect />
         <Plan />
         <Journey />
         <SendToLab />
-        <JoinUs /> */}
+        <JoinUs />
       </div>
     </div>
   );
