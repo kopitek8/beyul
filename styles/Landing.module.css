@@ -1,151 +1,39 @@
-.banner {
-  display: flex;
-  flex: 1;
-  background-image: url('../public/assets/banner.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: 51rem;
-  /* object-fit: fill; */
+.wrapper {
+  /* height: 100vh; */
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.cloud {
-  /* display: flex; */
-  flex: 1;
-  background-image: url('../public/assets/itinerary.jpg');
-  height: 22rem;
-  max-width: 100%;
-  margin-top: 20%;
+.sky {
+  background-color: antiquewhite;
 }
 
-.person {
-  display: flex;
-  background-image: url('../public/assets/cloud.png');
-  height: 25rem;
-  width: 60%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 35%;
-  left: 23%;
+.village {
+  margin-top: -15.6%;
 }
 
-/* Styling for main logo */
-
-.festivalLogoContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  height: 50vh;
-  position: relative;
-  margin: 17% 0% 0% 5.2%;
+.biguCloud {
+  margin: -71.2% 0% 0% 0.2%;
+  padding: 31%;
 }
 
-.festivalLogo {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  position: relative !important;
+.yetiPost {
+  padding: 61.5%;
+  margin: -103.5% -61.8% 0% 0%;
 }
 
-/* Styling for top container */
-
-.topContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 98.9vw;
-  height: 39vh;
-  position: relative;
-}
-
-.top {
-  /* object-fit: cover; */
-  width: 100%;
-  height: 100%;
-  position: relative !important;
-  background-color: red;
-}
-
-/* Parallax div elements styling */
-
-.stars {
-  background-image: url('../public/assets/Parallax/top.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-.background {
-  background-image: url('../public/assets/Parallax/middle.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 120vh;
-  margin: -46.9% 0% 0% 0%;
-}
-
-.logo {
-  background-image: url('../public/assets/Parallax/logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 45vh;
-  margin: -48.3% 0% 0% 1%;
-}
-
-.post {
-  background-image: url('../public/assets/Parallax/post.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  height: 48vh;
-  margin: -13% 0.1% 0% 20%;
-}
-
-.steps {
-  background-image: url('../public/assets/Parallax/bottom.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 60vh;
-  margin: -25.4% 0% 0% 0%;
-}
-
-/* Styling for middle container */
-
-.middleContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 99vw;
-  height: 102vh;
-  position: relative;
-  margin: -15.1% 0% 0% 0%;
-  overflow: hidden;
-  /* background-color: aquamarine; */
-}
-
-.middle {
-  /* object-fit: cover; */
-  /* background-color: red; */
-  /* width: 100%;
-  height: 100%; */
-  /* position: relative !important; */
-}
-
-@media (orientation: landscape) {
-  .banner {
-    background-image: url('../public/assets/banner.jpg');
-  }
+.stepstones {
+  margin-top: -79.8%;
 }
 
 @media (orientation: portrait) {
-  .banner {
+  .wrapper {
     background-image: url('../public/assets/banner-mobile.jpg');
+    display: flex;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
 }

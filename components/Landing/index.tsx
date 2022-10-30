@@ -13,123 +13,66 @@ import middle from '../../public/assets/Parallax/middle.png';
 import bottom from '../../public/assets/Parallax/bottom.png';
 import post from '../../public/assets/Parallax/post.png';
 
-// const dimension = Dimension.get(window);
-// console.log('di ', dimension);
+import useDeviceSize from '../../utilities/useDeviceSize';
 
 const Landing: React.FC = () => {
-  // const [position, setPosition] = useState(30);
+  const [width, height] = useDeviceSize();
 
-  // useEffect(() => {
-  //   setPosition(0);
-  // }, []);
+  // const renderParallaxView = () => {
+  //   return (
+  //     <Parallax pages={5}>
+  //       <ParallaxLayer speed={1}>
+  //         <div className={styles.sky}>
+  //           <Image src={top} alt={'Sky and stars'} />
+  //         </div>
+  //       </ParallaxLayer>
+  //       <ParallaxLayer speed={1}>
+  //         <div className={styles.village}>
+  //           <Image src={middle} alt={'Village'} />
+  //         </div>
+  //       </ParallaxLayer>
+  //       <ParallaxLayer speed={3}>
+  //         <div className={styles.biguCloud}>
+  //           <Image src={logo} alt={'Bugy Life Festival'} />
+  //         </div>
+  //       </ParallaxLayer>
+  //       <ParallaxLayer speed={1}>
+  //         <div className={styles.yetiPost}>
+  //           <Image src={post} alt={'Beware of yeti'} />
+  //         </div>
+  //       </ParallaxLayer>
+  //       <ParallaxLayer speed={1}>
+  //         <div className={styles.stepstones}>
+  //           <Image src={bottom} alt={'Steps and stone'} />
+  //         </div>
+  //       </ParallaxLayer>
+  //     </Parallax>
+  //   );
+  // };
 
-  // const starsRef = useParallax<HTMLDivElement>({
-  //   speed: 10,
-  // });
-  const backgroundRef = useParallax<HTMLDivElement>({
-    speed: 10,
-  });
-  const logoRef = useParallax<HTMLDivElement>({
-    speed: 15,
-  });
-  const postRef = useParallax<HTMLDivElement>({
-    speed: 10,
-  });
-  const stepsRef = useParallax<HTMLDivElement>({
-    speed: 25,
-  });
+  const renderMaxView = () => {
+    return (
+      <>
+        <div className={styles.sky}>
+          <Image src={top} alt={'Sky and stars'} />
+        </div>
+        <div className={styles.village}>
+          <Image src={middle} alt={'Village'} />
+        </div>
+        <div className={styles.biguCloud}>
+          <Image src={logo} alt={'Bugy Life Festival'} />
+        </div>
+        <div className={styles.yetiPost}>
+          <Image src={post} alt={'Beware of yeti'} />
+        </div>
+        <div className={styles.stepstones}>
+          <Image src={bottom} alt={'Steps and stone'} />
+        </div>
+      </>
+    );
+  };
 
-  return (
-    <div
-    // className={styles.banner}
-    >
-      <div className={styles.stars} />
-      <div className={styles.background} ref={backgroundRef.ref} />
-      <div className={styles.logo} ref={logoRef.ref} />
-      <div className={styles.post} ref={postRef.ref} />
-      <div className={styles.steps} ref={stepsRef.ref} />
-      {/* <div className={styles.topContainer}>
-        <Image
-          src={top}
-          alt={'Parallax Cloud'}
-          layout={'fill'}
-          className={styles.top}
-        />
-      </div>
-      <div className={styles.middleContainer}>
-        <Image
-          src={middle}
-          alt={'Parallax Cloud'}
-          layout={'fill'}
-          className={styles.middle}
-        />
-      </div> */}
-
-      {/* <div className={styles.festivalLogoContainer} ref={logoRef.ref}>
-        <Image
-          src={logo}
-          alt={'Parallax Cloud'}
-          layout={'fill'}
-          className={styles.festivalLogo}
-        />
-      </div> */}
-    </div>
-
-    // <div>
-    //   <Parallax pages={1} style={{ overflow: 'hidden' }}>
-    //     <ParallaxLayer offset={0} speed={1}>
-    //       <div className={styles.topContainer}>
-    //         <Image
-    //           src={top}
-    //           alt={'Parallax Cloud'}
-    //           layout={'fill'}
-    //           className={styles.top}
-    //         />
-    //       </div>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={1} speed={0.5}>
-    //       <div className={styles.middleContainer}>
-    //         <Image
-    //           src={middle}
-    //           alt={'Parallax Cloud'}
-    //           layout={'fill'}
-    //           className={styles.middle}
-    //         />
-    //       </div>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer>
-    //       <div className={styles.festivalLogoContainer}>
-    //         <Image
-    //           src={post}
-    //           alt={'Parallax Cloud'}
-    //           layout={'fill'}
-    //           className={styles.festivalLogo}
-    //         />
-    //       </div>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer>
-    //       <div className={styles.festivalLogoContainer}>
-    //         <Image
-    //           src={bottom}
-    //           alt={'Parallax Cloud'}
-    //           layout={'fill'}
-    //           className={styles.festivalLogo}
-    //         />
-    //       </div>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer>
-    //       <div className={styles.festivalLogoContainer}>
-    //         <Image
-    //           src={logo}
-    //           alt={'Parallax Cloud'}
-    //           layout={'fill'}
-    //           className={styles.festivalLogo}
-    //         />
-    //       </div>
-    //     </ParallaxLayer>
-    //   </Parallax>
-    // </div>
-  );
+  return <div className={styles.wrapper}>{width > 980 && renderMaxView()}</div>;
 };
 
 export default Landing;
