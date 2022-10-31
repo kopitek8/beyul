@@ -1,3 +1,5 @@
+//Utility function to get window height and width
+
 import { useEffect, useState } from 'react';
 
 const useDeviceSize = () => {
