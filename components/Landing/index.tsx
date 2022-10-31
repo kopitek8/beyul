@@ -19,13 +19,10 @@ import useCustomParallax from '../../utilities/useCustomParallax';
 const Landing: React.FC = () => {
   const [width, height] = useDeviceSize();
   const [offsetY] = useCustomParallax();
-
   const renderMaxView = () => {
     return (
       <div>
-        <div
-        // style={{ transform: `translateY(${offsetY * 0.4}px)` }}
-        >
+        <div style={{ transform: `translateY(${offsetY * 0.1}px)` }}>
           <Image src={top} alt={'Sky and stars'} />
         </div>
         <div
@@ -36,19 +33,19 @@ const Landing: React.FC = () => {
         </div>
         <div
           className={styles.biguCloud}
-          style={{ transform: `translateY(-${offsetY * 0.6}px)` }}
+          style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
         >
           <Image src={logo} alt={'Bugy Life Festival'} />
         </div>
         <div
           className={styles.yetiPost}
-          style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
+          style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
         >
           <Image src={post} alt={'Beware of yeti'} />
         </div>
         <div
           className={styles.stepstones}
-          style={{ transform: `translateY(-${offsetY * 0.31}px)` }}
+          style={{ transform: `translateY(-${offsetY * 0.16}px)` }}
         >
           <Image src={bottom} alt={'Steps and stone'} />
         </div>
