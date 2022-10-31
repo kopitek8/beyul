@@ -22,6 +22,38 @@
   margin-top: -79.8%;
 }
 
+.cloudContainer {
+  height: 100vh;
+}
+
+.cloudTopLeft {
+  position: absolute;
+  top: -12%;
+  left: -5%;
+}
+
+.cloudTopRight {
+  position: absolute;
+  top: -12%;
+  right: -5%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.cloudBottomLeft {
+  position: absolute;
+  bottom: -5%;
+  left: -15%;
+}
+
+.cloudBottomRight {
+  position: absolute;
+  bottom: -5%;
+  right: -8%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 @media (orientation: portrait) {
   .wrapper {
     background-image: url('../public/assets/banner-mobile.jpg');
