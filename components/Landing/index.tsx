@@ -1,7 +1,6 @@
 import React, { HTMLAttributes, useEffect, useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import { useParallax } from 'react-scroll-parallax';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { useTransition, animated } from 'react-spring';
 import styles from '../../styles/Landing.module.css';
 
 import cloud from '../../public/assets/Clouds/cloud.png';
@@ -32,6 +31,7 @@ import post from '../../public/assets/Parallax/post.png';
 import useDeviceSize from '../../utilities/useDeviceSize';
 import useCustomParallax from '../../utilities/useCustomParallax';
 
+//Separate arrays for images later on
 const cloudTopLeftArray = [
   {
     src: cloud,
@@ -41,18 +41,18 @@ const cloudTopLeftArray = [
     src: cloud1,
     alt: 'Cloud',
   },
-  {
-    src: cloud4,
-    alt: 'Cloud',
-  },
-  {
-    src: cloud5,
-    alt: 'Cloud',
-  },
-  {
-    src: cloud6,
-    alt: 'Cloud',
-  },
+  // {
+  //   src: cloud4,
+  //   alt: 'Cloud',
+  // },
+  // {
+  //   src: cloud5,
+  //   alt: 'Cloud',
+  // },
+  // {
+  //   src: cloud6,
+  //   alt: 'Cloud',
+  // },
 ];
 
 const cloudBottomLeftArray = [
@@ -117,8 +117,16 @@ const cloudBottomRightArray = [
 ];
 
 const Landing: React.FC = () => {
+  const [items, setItems] = useState([]);
   const [width, height] = useDeviceSize();
   const [offsetY] = useCustomParallax();
+  const transition = useTransition(items, {
+    // from: { x: -1500, opacity: 1 },
+    // enter: { x: -1500, opacity: 1 },
+    enter: (item) => (next) =>
+      next({ x: item.x, y: item.y, opacity: item.opacity, delay: item.delay }),
+    leave: { x: 1600, opacity: 1 },
+  });
 
   const renderMaxView = () => {
     return (
@@ -154,6 +162,7 @@ const Landing: React.FC = () => {
     );
   };
 
+  //Make the following a utility function later on
   const renderCloudArray = (
     key: number,
     src: StaticImageData,
@@ -171,11 +180,40 @@ const Landing: React.FC = () => {
 
   return (
     <div className={styles.wrapper}>
-      {width >= 764 && renderMaxView()}
-      {/* {cloudTopLeftArray.map((arr, key) =>
+      {/* {width >= 764 && renderMaxView()}
+      {cloudTopLeftArray.map((arr, key) =>
         renderCloudArray(key, arr.src, arr.alt, styles.cloudTopLeft)
+      )} */}
+      <button
+        onClick={() => {
+          setItems((v) =>
+            v.length
+              ? []
+              : [
+                  { x: -1500, y: 50, opacity: 1, delay: 200 },
+                  { x: -1200, y: 50, opacity: 1, delay: 400 },
+                  { x: -900, y: 50, opacity: 1, delay: 600 },
+                ]
+          );
+        }}
+        style={{ width: 400, height: 200 }}
+      >
+        {items.length ? 'Mount' : 'Unmount'}
+      </button>
+      {transition((style, item) =>
+        item ? (
+          // <animated.div style={style}>
+          //     <h1>HII</h1>
+          //   </animated.div>
+
+          <animated.div style={style}>
+            {cloudTopLeftArray.map((arr, key) =>
+              renderCloudArray(key, arr.src, arr.alt, styles.cloudTopLeft)
+            )}
+          </animated.div>
+        ) : null
       )}
-      {cloudBottomLeftArray.map((arr, key) =>
+      {/* {cloudBottomLeftArray.map((arr, key) =>
         renderCloudArray(key, arr.src, arr.alt, styles.cloudBottomLeft)
       )}
       {cloudTopRightArray.map((arr, key) =>
