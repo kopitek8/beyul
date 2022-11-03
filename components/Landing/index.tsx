@@ -207,9 +207,14 @@ const Landing: React.FC = () => {
           //   </animated.div>
 
           <animated.div style={style}>
-            {cloudTopLeftArray.map((arr, key) =>
+            {/* {cloudTopLeftArray.map((arr, key) =>
               renderCloudArray(key, arr.src, arr.alt, styles.cloudTopLeft)
-            )}
+            )} */}
+            <div className={styles.cloudContainer}>
+              <div className={styles.cloudTopLeft}>
+                <Image src={cloud} alt={'alt'} />
+              </div>
+            </div>
           </animated.div>
         ) : null
       )}

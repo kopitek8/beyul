@@ -7,6 +7,7 @@ import Plan from '../components/Plan';
 import Journey from '../components/Journey';
 import SendToLab from '../components/SendToLab';
 import JoinUs from '../components/JoinUs';
+import Cloud from '../components/Cloud';
 
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -21,12 +22,13 @@ const Home: NextPage = () => {
       </Head>
 
       <div>
-        <Landing />
+        {/* <Landing />
         <Expect />
         <Plan />
         <Journey />
         <SendToLab />
-        <JoinUs />
+        <JoinUs /> */}
+        <Cloud />
       </div>
     </div>
   );
