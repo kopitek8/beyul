@@ -1,0 +1,17 @@
+.cloudContainer {
+  /* height: 100vh; */
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.cloudTopLeft {
+  /* background-color: aquamarine; */
+}
+
+.container {
+  /* position: absolute; */
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
