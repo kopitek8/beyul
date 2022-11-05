@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { useParallax } from 'react-scroll-parallax';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import React, { HTMLAttributes, useEffect, useState } from 'react';
+import Image, { StaticImageData } from 'next/image';
+import { useTransition, animated } from 'react-spring';
 import styles from '../../styles/Landing.module.css';
-
-import cloud from '../../public/assets/Clouds/cloud.png';
-import cloud1 from '../../public/assets/Clouds/cloud1.png';
 
 import logo from '../../public/assets/Parallax/logo.png';
 import top from '../../public/assets/Parallax/top.png';
@@ -17,8 +13,9 @@ import useDeviceSize from '../../utilities/useDeviceSize';
 import useCustomParallax from '../../utilities/useCustomParallax';
 
 const Landing: React.FC = () => {
-  const [width, height] = useDeviceSize();
+  const [width] = useDeviceSize();
   const [offsetY] = useCustomParallax();
+
   const renderMaxView = () => {
     return (
       <div>
