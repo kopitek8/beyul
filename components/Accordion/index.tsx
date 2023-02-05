@@ -3,7 +3,14 @@ import { IoArrowDownCircleSharp, IoArrowUpCircleSharp } from "react-icons/io5";
 
 import styles from '../../styles/Accordion.module.css';
 
-const Accordion: React.FC = ({ title, content }) => {
+interface Accordion {
+    title: string,
+    content: string,
+}
+
+const Accordion = (props: Accordion) => {
+
+    const { title, content } = props;
 
     const [isActive, setIsActive] = useState(false);
 
