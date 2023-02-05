@@ -1,0 +1,22 @@
+.accordionContainer {
+    padding: 1rem;
+}
+
+.accordion {}
+
+.accordionItem {
+    padding: 1rem;
+    border: 2px solid #0a3d05;
+}
+
+.accordionTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordionContent {
+    display: flex;
+    margin-top: 1rem;
+}
