@@ -37,7 +37,7 @@ const Help: NextPage = () => {
                                 <h4>Frequently Asked Questions</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
-                            <Link href="/help">
+                            <Link href="/faq">
                                 <button onClick={() => console.log('FAQ clickd')} className={styles.button}>
                                     <span className={styles.content}>Visit FAQ</span>
                                 </button>
