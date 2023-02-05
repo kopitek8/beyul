@@ -54,6 +54,7 @@ li {
 
 button {
   font-family: yatra;
+  cursor: pointer;
 }
 
 @media (orientation: portrait) {
