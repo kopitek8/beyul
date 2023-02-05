@@ -35,6 +35,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .socialLinks {
@@ -48,6 +49,7 @@
 
 .logo {
   font-size: 2vw;
+  cursor: pointer;
 }
 
 .beyulLogoContainer {
