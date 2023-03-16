@@ -9,7 +9,7 @@ const SendToLab: React.FC = () => {
     <div className={styles.container}>
       <Link href="/">
         <button onClick={() => console.log('Clickd')} className={styles.button}>
-          <p className={styles.content}>Subscribe</p>
+          <p className={styles.content}>I&apos;m Interested</p>
         </button>
       </Link>
     </div>

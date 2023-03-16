@@ -9,7 +9,7 @@ interface LayoutChildren {
 const Layout = ({ children }: LayoutChildren) => {
   return (
     <div className='content'>
-      <Navigation />
+      {/* <Navigation /> */}
       {children}
       <Footer />
     </div>

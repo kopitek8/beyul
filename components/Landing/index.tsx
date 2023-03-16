@@ -9,6 +9,8 @@ import middle from '../../public/assets/Parallax/middle.png';
 import bottom from '../../public/assets/Parallax/bottom.png';
 import post from '../../public/assets/Parallax/post.png';
 
+import responsiveBanner from '../../public/assets/banner-mobile.jpg';
+
 import useDeviceSize from '../../utilities/useDeviceSize';
 import useCustomParallax from '../../utilities/useCustomParallax';
 
@@ -50,8 +52,17 @@ const Landing: React.FC = () => {
     );
   };
 
+  const renderResponsiveView = () => {
+    return (
+      <Image src={responsiveBanner} alt={'Beyul banner'} />
+    );
+  }
+
   return (
-    <div className={styles.wrapper}>{width >= 764 && renderMaxView()}</div>
+    <>
+      <div className={styles.wrapper}>{width >= 764 && renderMaxView()}</div>
+      <div className={styles.wrapper}>{width <= 763 && renderResponsiveView()}</div>
+    </>
   );
 };
 

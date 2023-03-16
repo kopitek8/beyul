@@ -54,7 +54,7 @@
   overflow-y: hidden;
 }
 
-@media (orientation: portrait) {
+/* @media (orientation: portrait) {
   .wrapper {
     background-image: url('../public/assets/banner-mobile.jpg');
     display: flex;
@@ -64,4 +64,4 @@
     background-repeat: no-repeat;
     height: 100vh;
   }
-}
+} */

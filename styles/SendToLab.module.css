@@ -9,12 +9,19 @@
 .button {
   background-image: url('../public/assets/Lab/stone.jpg');
   background-repeat: no-repeat;
-  width: 28vw;
+  width: 36vw;
   height: 8vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 8px;
+
 }
+
+/* .button &:hover {
+  transition: 0.2s ease-out;
+  width: 2vw;
+} */
 
 .content {
   color: silver;
