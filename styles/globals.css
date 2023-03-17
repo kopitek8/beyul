@@ -57,6 +57,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  font-family: 'yatra';
+}
+
 @media (orientation: portrait) {
   h1 {
     font-size: 7vw;

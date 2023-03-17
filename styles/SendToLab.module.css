@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -15,7 +16,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  transition: 100ms ease-out;
+}
 
+.button:hover {
+  transform: scale(1.005);
+  transition: 100ms ease-in;
+  box-shadow: 0px 4px 20px rgba(255, 85, 0, 0.1);
 }
 
 /* .button &:hover {
@@ -26,4 +33,11 @@
 .content {
   color: silver;
   font-size: 4.5vw;
+}
+
+.modal {}
+
+.input {
+  width: 18vw;
+  height: 4vh;
 }
