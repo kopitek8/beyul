@@ -33,7 +33,7 @@ const Cloud: React.FC = () => {
   };
 
   const transitionRight = useTransition(itemsRight, {
-    from: { x: -100, y: 0, opacity: 1 },
+    from: { x: 0, y: 0, opacity: 1 }, //x: -100 previously
     enter: { x: 0, opacity: 1, delay: 20 },
     leave: (item) => async (next) => {
       await next({ x: item.x, y: 0, opacity: item.opacity, delay: item.delay });
@@ -42,7 +42,7 @@ const Cloud: React.FC = () => {
   });
 
   const transitionLeft = useTransition(itemsLeft, {
-    from: { x: 100, y: 0, opacity: 1 },
+    from: { x: 0, y: 0, opacity: 1 }, //x: 100 previously
     enter: { x: 0, opacity: 1, delay: 20 },
     leave: (item) => async (next) => {
       await next({ x: item.x, y: 0, opacity: item.opacity, delay: item.delay });
