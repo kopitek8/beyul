@@ -1,9 +1,18 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import styles from '../../styles/Journey.module.css';
+import Image from 'next/image';
+
+import journey from '../../public/assets/itinerary.jpg';
+import responsiveJourney from '../../public/assets/itinerary-mobile.jpg';
+
+import useDeviceSize from '../../utilities/useDeviceSize';
 
 const Journey: React.FC = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [name, setName] = useState('');
+  // const [position, setPosition] = useState({ x: 0, y: 0 });
+  // const [name, setName] = useState('');
+
+  const [width] = useDeviceSize();
+
 
   // useMemo(() => myCurrentLocation(xStart, xEnd, yStart, yEnd));
 
@@ -19,30 +28,54 @@ const Journey: React.FC = () => {
   // };
 
   //Function to find the mouse coordinates when hovering over the journey image
-  interface MouseInterface {
-    clientX: number;
-    clientY: number;
+
+  // ------------------ COMMENTED OUT FOR MVP. NEED TO FIGURE OUT MOUSE COORDINATE BELOW. UNCOMMENT AND WORK FROM HERE TO
+  // interface MouseInterface {
+  //   clientX: number;
+  //   clientY: number;
+  // }
+
+  // const handleMe = (e: MouseInterface) => {
+  //   var a = e.clientX;
+  //   var b = e.clientY;
+
+  //   document.getElementById('journey')?.innerHTML
+  //     ? setPosition({ x: a, y: b })
+  //     : setPosition({ x: 0, y: 0 });
+  // };
+
+
+  // return (
+  //   <>
+  //     <div id={'journey'} className={styles.itinerary} onMouseMove={handleMe}>
+  //       <p>
+  //         Mouse coordinates: x = {position.x} and y = {position.y}
+  //       </p>
+  //       <h1>{name}</h1>
+  //     </div>
+  //   </>
+  // );
+
+  // ---------------------- HERE
+
+  const renderResponsiveView = () => {
+    return (
+      <Image src={responsiveJourney} alt={'The journey'} />
+    );
   }
 
-  const handleMe = (e: MouseInterface) => {
-    var a = e.clientX;
-    var b = e.clientY;
-
-    document.getElementById('journey')?.innerHTML
-      ? setPosition({ x: a, y: b })
-      : setPosition({ x: 0, y: 0 });
-  };
+  const renderMainView = () => {
+    return (
+      <Image src={journey} alt={'The journey'} />
+    )
+  }
 
   return (
     <>
-      <div id={'journey'} className={styles.itinerary} onMouseMove={handleMe}>
-        <p>
-          Mouse coordinates: x = {position.x} and y = {position.y}
-        </p>
-        <h1>{name}</h1>
-      </div>
+      <div className={styles.wrapper}>{width >= 764 && renderMainView()}</div>
+      <div className={styles.wrapper}>{width <= 763 && renderResponsiveView()}</div>
     </>
-  );
+  )
 };
 
 export default Journey;
