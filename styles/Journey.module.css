@@ -1,4 +1,4 @@
-.itinerary {
+/* .itinerary {
   flex: 1;
   background-image: url('../public/assets/itinerary.jpg');
   background-size: cover;
@@ -18,4 +18,9 @@
   .itinerary {
     background-image: url('../public/assets/itinerary-mobile.jpg');
   }
+} */
+
+.wrapper {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }

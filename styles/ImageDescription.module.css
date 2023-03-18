@@ -20,3 +20,9 @@
   height: 100%;
   position: relative !important;
 }
+
+@media (max-width: 900px) {
+  .item {
+    flex-basis: 36%;
+  }
+}

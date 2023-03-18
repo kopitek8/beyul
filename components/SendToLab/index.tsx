@@ -14,7 +14,7 @@ const SendToLab = (props: SendEmail) => {
   const [isClicked, setClicked] = useState(false);
   const [values, setValues] = useState({ name: '', email: '', text: 'Send' })
 
-  const sendMail = async (e) => {
+  const sendMail = async (e: any) => {
     e.preventDefault();
     setValues({ ...values, text: 'Sending...' })
 

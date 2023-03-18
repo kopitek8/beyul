@@ -10,7 +10,7 @@ import styles from '../../styles/Modal.module.css';
 //     title: string;
 // }
 
-const Modal = (props) => {
+const Modal = (props: { show: any; onClose: any; title: any; children: any; }) => {
     const { show, onClose, title, children } = props;
 
     const [isBrowser, setIsBrowser] = useState(false);
@@ -19,7 +19,7 @@ const Modal = (props) => {
         setIsBrowser(true);
     }, []);
 
-    const handleCloseClick = (e) => {
+    const handleCloseClick = (e: any) => {
         e.preventDefault();
         onClose(e);
     };
