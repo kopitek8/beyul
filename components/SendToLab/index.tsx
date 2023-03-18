@@ -9,7 +9,7 @@ interface SendEmail {
   email: string,
 }
 
-const SendToLab = (props: SendEmail) => {
+const SendToLab = () => {
 
   const [isClicked, setClicked] = useState(false);
   const [values, setValues] = useState({ name: '', email: '', text: 'Send' })
@@ -41,10 +41,10 @@ const SendToLab = (props: SendEmail) => {
         })
     } else {
       emailjs.send(
-        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
         values,
-        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
+        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY as string)
         .then(() => {
           toast('We appreciate your interest. We will get back to you shortly.',
             {
