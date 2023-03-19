@@ -9,6 +9,7 @@ import village from '../../public/assets/Expect/village.jpg';
 import sceneries from '../../public/assets/Expect/sceneries.jpg';
 
 import renderItem from '../Reusable/ImageDescription';
+import Head from 'next/head';
 
 const expectArr = [
   {
@@ -40,6 +41,10 @@ const expectArr = [
 const Expect: React.FC = () => {
   return (
     <div className={styles.container}>
+      <Head>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
       <h1 className={styles.header}>what to expect</h1>
       <div className={styles.imageContainer}>
         {expectArr.map((arr, key) => renderItem(key, arr.src, arr.alt))}

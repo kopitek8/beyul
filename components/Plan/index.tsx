@@ -1,9 +1,14 @@
+import Head from 'next/head';
 import React from 'react';
 import styles from '../../styles/Plan.module.css';
 
 const Plan: React.FC = () => {
   return (
     <div className={styles.container}>
+      <Head>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
       <div className={styles.contentContainer}>
         <h1 className={styles.title}>the plan</h1>
         <span className={styles.content}>

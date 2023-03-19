@@ -17,7 +17,21 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Beyul</title>
-        <meta name='description' content='Beyul website' />
+        <meta
+          name='description'
+          content='Beyül is a destination development social enterprise based in London, UK.
+            It is a start-up in its early stages of development. Employing guerrilla tactics,
+            Beyül wants to dive into the market headfirst with bare minimal viable product available.
+            This is in expectation of executing its first pilot project- Bigu Life Festival in Nepal within the summer of 2023. '
+        />
+        <meta
+          name='vision'
+          content='Beyül is a social enterprise initiated to realize this wonderfully rich country through tourism.
+          Beyül has begun with a team of seekers hoping to find more in a quest to channelize the rising consciousness to uplift,
+          preserve, sustain and conserve our country and the beauty in our people.'
+        />
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.png' />
       </Head>
 

@@ -1,5 +1,6 @@
 import React, { HTMLAttributes, useEffect, useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
+import Head from 'next/head';
 import { useTransition, animated } from 'react-spring';
 import styles from '../../styles/Landing.module.css';
 
@@ -67,6 +68,11 @@ const Landing: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
+
       <div className={styles.wrapper}>{width >= 764 && renderMaxView()}</div>
       <div className={styles.wrapper}>{width <= 763 && renderResponsiveView()}</div>
     </>

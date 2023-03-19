@@ -3,6 +3,7 @@ import styles from '../../styles/SendToLab.module.css';
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
 import { IoCloseOutline } from "react-icons/io5";
+import Head from 'next/head';
 
 interface SendEmail {
   name: string,
@@ -72,6 +73,10 @@ const SendToLab = () => {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
       <button
         onClick={() => {
           setClicked(!isClicked);
