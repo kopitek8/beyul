@@ -6,6 +6,7 @@ import journey from '../../public/assets/itinerary.jpg';
 import responsiveJourney from '../../public/assets/itinerary-mobile.jpg';
 
 import useDeviceSize from '../../utilities/useDeviceSize';
+import Head from 'next/head';
 
 const Journey: React.FC = () => {
   // const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -60,7 +61,7 @@ const Journey: React.FC = () => {
 
   const renderResponsiveView = () => {
     return (
-      <Image src={responsiveJourney} alt={'The journey'} />
+      <Image src={responsiveJourney} alt={'The journey responsive mobile view'} />
     );
   }
 
@@ -72,6 +73,10 @@ const Journey: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
       <div className={styles.wrapper}>{width >= 764 && renderMainView()}</div>
       <div className={styles.wrapper}>{width <= 763 && renderResponsiveView()}</div>
     </>

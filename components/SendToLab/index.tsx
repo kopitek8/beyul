@@ -3,6 +3,7 @@ import styles from '../../styles/SendToLab.module.css';
 import emailjs from '@emailjs/browser';
 import { toast } from "react-toastify";
 import { IoCloseOutline } from "react-icons/io5";
+import Head from 'next/head';
 
 interface SendEmail {
   name: string,
@@ -16,7 +17,6 @@ const SendToLab = () => {
 
   const sendMail = async (e: any) => {
     e.preventDefault();
-    setValues({ ...values, text: 'Sending...' })
 
     if (values.name === '' && values.email === '') {
       toast('You must enter your name and email',
@@ -40,6 +40,7 @@ const SendToLab = () => {
           type: 'warning'
         })
     } else {
+      setValues({ ...values, text: 'Sending...' })
       emailjs.send(
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
@@ -72,6 +73,10 @@ const SendToLab = () => {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
       <button
         onClick={() => {
           setClicked(!isClicked);
@@ -91,7 +96,9 @@ const SendToLab = () => {
               <div>
                 <div>
                   <form className={styles.form}>
+                    <label htmlFor="name">Name</label>
                     <input
+                      id="name"
                       type="text"
                       placeholder="What's your name?"
                       required
@@ -101,7 +108,9 @@ const SendToLab = () => {
                       }
                       className={styles.input}
                     />
+                    <label htmlFor="email">Email</label>
                     <input
+                      id="email"
                       type="email"
                       placeholder="What's your email?"
                       required
@@ -111,6 +120,7 @@ const SendToLab = () => {
                       }
                       className={styles.input}
                     />
+                    <br />
                   </form>
                 </div>
                 <div className={styles.labButtonContainer}>
