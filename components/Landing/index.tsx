@@ -62,7 +62,7 @@ const Landing: React.FC = () => {
 
   const renderResponsiveView = () => {
     return (
-      <Image src={responsiveBanner} alt={'Beyul banner'} />
+      <Image src={responsiveBanner} alt={'Beyul mobile responsive banner'} />
     );
   }
 

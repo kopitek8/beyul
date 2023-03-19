@@ -61,7 +61,7 @@ const Journey: React.FC = () => {
 
   const renderResponsiveView = () => {
     return (
-      <Image src={responsiveJourney} alt={'The journey'} />
+      <Image src={responsiveJourney} alt={'The journey responsive mobile view'} />
     );
   }
 

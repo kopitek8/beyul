@@ -17,7 +17,6 @@ const SendToLab = () => {
 
   const sendMail = async (e: any) => {
     e.preventDefault();
-    setValues({ ...values, text: 'Sending...' })
 
     if (values.name === '' && values.email === '') {
       toast('You must enter your name and email',
@@ -41,6 +40,7 @@ const SendToLab = () => {
           type: 'warning'
         })
     } else {
+      setValues({ ...values, text: 'Sending...' })
       emailjs.send(
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
@@ -96,7 +96,9 @@ const SendToLab = () => {
               <div>
                 <div>
                   <form className={styles.form}>
+                    <label htmlFor="name">Name</label>
                     <input
+                      id="name"
                       type="text"
                       placeholder="What's your name?"
                       required
@@ -106,7 +108,9 @@ const SendToLab = () => {
                       }
                       className={styles.input}
                     />
+                    <label htmlFor="email">Email</label>
                     <input
+                      id="email"
                       type="email"
                       placeholder="What's your email?"
                       required
@@ -116,6 +120,7 @@ const SendToLab = () => {
                       }
                       className={styles.input}
                     />
+                    <br />
                   </form>
                 </div>
                 <div className={styles.labButtonContainer}>

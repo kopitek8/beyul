@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
@@ -8,11 +9,27 @@ import Journey from '../components/Journey';
 import SendToLab from '../components/SendToLab';
 import JoinUs from '../components/JoinUs';
 import Cloud from '../components/Cloud';
+import CloudLoader from '../components/CloudLoader';
 
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
+import CircleLoader from "react-spinners/CircleLoader";
 
 const Home: NextPage = () => {
+
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    Promise.all(
+      Array.from(document.images)
+        .filter(img => !img.complete)
+        .map(img => new Promise(resolve => {
+          img.onload = img.onerror = resolve;
+        })))
+      .then(() => {
+        console.log('images finished loading');
+        setIsLoading(!isLoading);
+      });
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -34,16 +51,27 @@ const Home: NextPage = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.png' />
       </Head>
-
-      <div>
-        <Landing />
-        <Expect />
-        <Plan />
-        <Journey />
-        <SendToLab />
-        {/* <JoinUs /> */}
-        <Cloud />
-      </div>
+      {isLoading ? (
+        <div>
+          {/* <div className={styles.loaderContainer}>
+            <CircleLoader
+              color={'maroon'}
+              loading={isLoading}
+              size={200}
+            />
+          </div> */}
+          <CloudLoader />
+        </div>) : (
+        <div>
+          <Landing />
+          <Expect />
+          <Plan />
+          <Journey />
+          <SendToLab />
+          {/* <JoinUs /> */}
+          <Cloud />
+        </div>
+      )}
     </div>
   );
 };
