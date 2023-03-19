@@ -53,7 +53,7 @@ const Cloud: React.FC = () => {
   useEffect(() => {
     setTimeout(() => {
       animateClouds();
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (

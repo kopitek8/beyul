@@ -53,14 +53,14 @@ const Home: NextPage = () => {
       </Head>
       {isLoading ? (
         <div>
-          {/* <div className={styles.loaderContainer}>
+          <div className={styles.loaderContainer}>
             <CircleLoader
               color={'maroon'}
               loading={isLoading}
               size={200}
             />
-          </div> */}
-          <CloudLoader />
+          </div>
+          {/* <CloudLoader /> */}
         </div>) : (
         <div>
           <Landing />
