@@ -45,7 +45,7 @@ p {
 
 span {
   color: #871514;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
 }
 
 li {
@@ -63,7 +63,7 @@ input {
 
 @media (orientation: portrait) {
   h1 {
-    font-size: 7vw;
+    font-size: 8vw;
     color: #871514;
   }
 
@@ -84,7 +84,7 @@ input {
 
   p {
     color: #871514;
-    font-size: 2vw;
+    font-size: 4.5vw;
     text-align: center;
   }
 
@@ -94,7 +94,7 @@ input {
   }
 
   span {
-    font-size: 1.6vw;
+    font-size: 4vw;
     color: #871514;
   }
 }
