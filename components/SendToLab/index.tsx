@@ -5,6 +5,8 @@ import { toast } from "react-toastify";
 import { IoCloseOutline } from "react-icons/io5";
 import Head from 'next/head';
 
+import CircleLoader from "react-spinners/CircleLoader";
+
 interface SendEmail {
   name: string,
   email: string,
@@ -13,7 +15,7 @@ interface SendEmail {
 const SendToLab = () => {
 
   const [isClicked, setClicked] = useState(false);
-  const [values, setValues] = useState({ name: '', email: '', text: 'Send' })
+  const [values, setValues] = useState({ name: '', email: '', isLoading: false })
 
   const sendMail = async (e: any) => {
     e.preventDefault();
@@ -40,7 +42,7 @@ const SendToLab = () => {
           type: 'warning'
         })
     } else {
-      setValues({ ...values, text: 'Sending...' })
+      setValues({ ...values, isLoading: true })
       emailjs.send(
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID as string,
@@ -67,7 +69,7 @@ const SendToLab = () => {
 
   const handleCloseClick = () => {
     setClicked(!isClicked);
-    setValues({ name: '', email: '', text: 'Send' })
+    setValues({ name: '', email: '', isLoading: false })
   };
 
 
@@ -131,7 +133,11 @@ const SendToLab = () => {
                         ? styles.labButton
                         : styles.labButtonDisabled}
                   >
-                    {values.text}
+                    {values.isLoading ? <CircleLoader
+                      color={'silver'}
+                      loading={values.isLoading}
+                      size={30}
+                    /> : 'Send'}
                   </button>
                 </div>
               </div>

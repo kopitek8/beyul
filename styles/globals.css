@@ -45,7 +45,7 @@ p {
 
 span {
   color: #871514;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
 }
 
 li {
@@ -84,7 +84,7 @@ input {
 
   p {
     color: #871514;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
   }
 
@@ -94,7 +94,7 @@ input {
   }
 
   span {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     color: #871514;
   }
 }
