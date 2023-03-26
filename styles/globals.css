@@ -45,7 +45,7 @@ p {
 
 span {
   color: #871514;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
 }
 
 li {
@@ -97,10 +97,10 @@ input {
     color: #871514;
     font-size: 1.4vw;
   }
-
-  button {
-    font-family: yatra;
-    cursor: pointer;
+  
+  span {
+    font-size: 4vw;
+    color: #871514;
   }
 
 }

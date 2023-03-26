@@ -11,7 +11,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ParallaxProvider>
         <Component {...pageProps} />
       </ParallaxProvider>
-      <ToastContainer />
+      <ToastContainer
+        position="bottom-right"
+        closeOnClick
+        draggable
+        autoClose={3000}
+      />
     </Layout>
   );
 }

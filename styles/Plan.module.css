@@ -1,5 +1,6 @@
 .container {
-  background-image: url('../public/assets/Plan/burn-paper.png');
+  /* background-image: url('../public/assets/Plan/burn-paper.png'); */
+  background-image: url('../public/assets/Plan/scroll-burn.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14,35 +15,40 @@
 .contentContainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 3% 9% 4% 10%;
-  margin: 0% 3% 0% 3%;
+  padding: 10% 20% 10% 20%;
+  margin: 4% 0% 4% 0%;
   overflow: hidden;
 }
 
 .title {
-  margin: 7% 7% 0% 7%;
+  /* margin: 7% 7% 0% 7%; */
 }
 
 .content {
   display: flex;
   flex-wrap: wrap;
-  padding: 4%;
-  text-align: center;
+  padding: 1%;
+  text-align: left;
 }
 
 @media (orientation: portrait) {
 
   .container {
-    background-image: url('../public/assets/Plan/burn-paper.png');
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image: unset;
     display: flex;
     flex-wrap: wrap;
     place-items: center;
     justify-content: center;
-    margin: 0% 0% 5% 0%;
-    padding: 30% 0% 30% 0%;
+    margin: unset;
+    padding: unset;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: unset;
+    overflow: hidden;
+    padding: 5%;
   }
 
 }
