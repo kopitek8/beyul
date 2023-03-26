@@ -121,7 +121,7 @@
   width: 4vw;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 900px) {
   .button {
     background-image: url('../public/assets/Lab/stone.jpg');
     width: 60vw;
