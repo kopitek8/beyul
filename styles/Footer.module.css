@@ -71,7 +71,7 @@
   position: relative !important;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 900px) {
   .logo {
     font-size: 3vw;
   }

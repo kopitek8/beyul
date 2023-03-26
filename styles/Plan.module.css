@@ -16,22 +16,26 @@
   display: flex;
   flex-wrap: wrap;
   padding: 10% 20% 10% 20%;
-  margin: 4% 0% 4% 0%;
+  margin: 8% 0% 8% 0%;
   overflow: hidden;
 }
 
 .title {
-  /* margin: 7% 7% 0% 7%; */
+  margin: 0% 0% 0% 0%;
+}
+
+.contentInnerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 1%; */
+  text-align: justify;
 }
 
 .content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1%;
-  text-align: left;
+  margin: 1% 0% 0% 1%;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 900px) {
 
   .container {
     background-image: unset;

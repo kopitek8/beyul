@@ -61,7 +61,7 @@ input {
   font-family: 'yatra';
 }
 
-@media (orientation: portrait) {
+@media (max-width: 900px) {
   h1 {
     font-size: 8vw;
     color: #871514;
@@ -97,7 +97,7 @@ input {
     color: #871514;
     font-size: 1.4vw;
   }
-  
+
   span {
     font-size: 4vw;
     color: #871514;

@@ -201,7 +201,7 @@
   }
 }
 
-@media (orientation: portrait) {
+@media (max-width: 900px) {
   .banner {
     background-image: url('../public/assets/banner-mobile.jpg');
   }
