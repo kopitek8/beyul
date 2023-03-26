@@ -14,7 +14,7 @@
 .contentContainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 2% 10% 4% 10%;
+  padding: 3% 9% 4% 10%;
   margin: 0% 3% 0% 3%;
   overflow: hidden;
 }
@@ -28,4 +28,21 @@
   flex-wrap: wrap;
   padding: 4%;
   text-align: center;
+}
+
+@media (orientation: portrait) {
+
+  .container {
+    background-image: url('../public/assets/Plan/burn-paper.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+    margin: 0% 0% 5% 0%;
+    padding: 30% 0% 30% 0%;
+  }
+
 }
