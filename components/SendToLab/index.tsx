@@ -91,7 +91,7 @@ const SendToLab = () => {
         <div className={styles.topModalContainer}>
           <div className={styles.modalContainer}>
             <div className={styles.buttonContainer}>
-              <p>Send to Lab</p>
+              <h4>Send to Lab</h4>
               <IoCloseOutline onClick={handleCloseClick} className={styles.closeButton} />
             </div>
             <div className={styles.contentContainer}>
