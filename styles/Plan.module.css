@@ -46,7 +46,6 @@
   .contentContainer {
     display: flex;
     flex-wrap: wrap;
-    padding: unset;
     margin: unset;
     overflow: hidden;
     padding: 5%;

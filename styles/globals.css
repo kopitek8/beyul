@@ -88,15 +88,21 @@ input {
     text-align: center;
   }
 
-  li {
-    color: #871514;
-    font-size: 1.4vw;
-  }
-
   span {
     font-size: 4vw;
     color: #871514;
   }
+
+  li {
+    color: #871514;
+    font-size: 1.4vw;
+  }
+  
+  span {
+    font-size: 4vw;
+    color: #871514;
+  }
+
 }
 
 /*
