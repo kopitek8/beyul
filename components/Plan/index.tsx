@@ -10,8 +10,7 @@ const Plan: React.FC = () => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <div className={styles.contentContainer}>
-        {/* <h1 className={styles.title}>the plan</h1> */}
-        <h1 className={styles.title}>welcome to our secret MVP launch!</h1>
+        <h1 className={styles.title}>the plan</h1>
         <span className={styles.contentInnerContainer}>
           {/* We take you through a revolution where you are breaking through your
           physical struggle navigating the Gaurishankar Conservation Area
@@ -25,6 +24,9 @@ const Plan: React.FC = () => {
           they treat you, it&apos;s hospitality, comes out of recognition, with
           Beyül you experience a festival of feelings within and around, with
           the ways of the modern and the ancient, in harmony. */}
+          <span className={styles.contentHeader}>
+            Welcome to our secret MVP launch!
+          </span>
           <span className={styles.content}>
             We are thrilled to introduce our startup - BEYÜL and its very first MVP experiment - BIGU LIFE FESTIVAL,
             a 7-day festival package that combines camping trek and village stay into one unforgettable experience in the Himalayas.
