@@ -11,6 +11,8 @@ import JoinUs from '../components/JoinUs';
 import Cloud from '../components/Cloud';
 import CloudLoader from '../components/CloudLoader';
 
+import banner from '../public/assets/banner.jpg';
+
 import CircleLoader from "react-spinners/CircleLoader";
 
 const Home: NextPage = () => {
@@ -57,10 +59,7 @@ const Home: NextPage = () => {
             Beyül wants to dive into the market headfirst with bare minimal viable product available.
             This is in expectation of executing its first pilot project- Bigu Life Festival in Nepal within the summer of 2023."
         />
-        <meta
-          property="og:image"
-          content="https://bigulifefestival.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner.5ca4c178.jpg&w=1920&q=75"
-        />
+        <meta property="og:image" content={`${banner}`} />
         <link rel='icon' href='/favicon.png' />
       </Head>
       {isLoading ? (
