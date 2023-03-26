@@ -31,6 +31,12 @@
   text-align: justify;
 }
 
+.contentHeader {
+  font-weight: bold;
+  font-size: 2.2vw;
+  margin: 1.5% 0% 0% 1.5%;
+}
+
 .content {
   margin: 1.5% 0% 0% 1.5%;
 }
@@ -39,12 +45,17 @@
 
   .container {
     background-image: unset;
+    /* background-size: 100% 100%; */
+    /* background-position: center center; */
+    /* background-repeat: no-repeat; */
     display: flex;
     flex-wrap: wrap;
     place-items: center;
     justify-content: center;
-    margin: unset;
+    /* padding: 90% 20% 90% 20%;
+    margin: 8% 0% 8% 0%; */
     padding: unset;
+    margin: unset;
   }
 
   .contentContainer {
@@ -52,7 +63,13 @@
     flex-wrap: wrap;
     margin: unset;
     overflow: hidden;
-    padding: 5%;
+    padding: 2.5%;
+  }
+
+  .contentHeader {
+    font-weight: bold;
+    font-size: 4.8vw;
+    margin: 1.5% 0% 0% 1.5%;
   }
 
 }
