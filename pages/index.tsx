@@ -85,6 +85,7 @@ const Home: NextPage = () => {
         <meta name="twitter:image" content="https://res.cloudinary.com/diy4muhie/image/upload/v1681140573/Beyul%20%7C%20Bigu%20Life%20Festival/banner_cbvpi4.jpg" />
         <meta name="twitter:site" content="@kopitek8" />
         <meta name="twitter:creator" content="@kopitek8" />
+        <link rel='icon' href='/favicon.png' />
       </Head>
       {isLoading ? (
         <div>
