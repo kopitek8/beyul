@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           content='Beyül is a destination development social enterprise based in London, UK.
             It is a start-up in its early stages of development. Employing guerrilla tactics,
             Beyül wants to dive into the market headfirst with bare minimal viable product available.
-            This is in expectation of executing its first pilot project- Bigu Life Festival in Nepal within the summer of 2023.'
+            This is in expectation of executing its first pilot project - Bigu Life Festival in Nepal within the summer of 2023.'
         />
         <meta
           name='vision'
@@ -51,7 +51,6 @@ const Home: NextPage = () => {
         />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta property="og:title" content="Bigu Life Festival" />
         <meta
           property="og:description"
           content="Beyül is a destination development social enterprise based in London, UK.
@@ -59,8 +58,23 @@ const Home: NextPage = () => {
             Beyül wants to dive into the market headfirst with bare minimal viable product available.
             This is in expectation of executing its first pilot project- Bigu Life Festival in Nepal within the summer of 2023."
         />
-        <meta property="og:image" content={`${banner}`} />
-        <link rel='icon' href='/favicon.png' />
+        <meta name="robots" content="index,follow" />
+        <meta name="twitter:card" content="summary" />
+        <meta property="og:title" content="Bigu Life Festival" />
+        <meta property="og:description" content="Beyül is a destination development social enterprise based in London, UK.
+            It is a start-up in its early stages of development. Employing guerrilla tactics,
+            Beyül wants to dive into the market headfirst with bare minimal viable product available.
+            This is in expectation of executing its first pilot project- Bigu Life Festival in Nepal within the summer of 2023."/>
+        <meta property="og:url" content="https://bigulifefestival.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://drive.google.com/file/d/1gbIrjYEya2nxVBET1Ku2hRpOLLoov4L6/view" />
+        <meta property="og:image:alt" content="Bigu Life Festival" />
+        <meta property="og:image:secure_url" content="https://drive.google.com/file/d/1gbIrjYEya2nxVBET1Ku2hRpOLLoov4L6/view" />
+        <meta property="og:image:type" content="img/png" />
+        <meta property="og:image:width" content="1026" />
+        <meta property="og:image:height" content="1026" />
+        <meta property="og:site_name" content="Bigu Life Festival" />
+
       </Head>
       {isLoading ? (
         <div>
