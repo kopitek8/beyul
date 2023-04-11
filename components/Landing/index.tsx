@@ -56,13 +56,13 @@ const Landing: React.FC = () => {
 
   const renderMaxView = () => {
     return (
-      <Image src={banner} alt={'Beyul banner'} />
+      <Image src={banner} alt={'Beyül banner'} />
     )
   }
 
   const renderResponsiveView = () => {
     return (
-      <Image src={responsiveBanner} alt={'Beyul mobile responsive banner'} />
+      <Image src={responsiveBanner} alt={'Beyül mobile responsive banner'} />
     );
   }
 

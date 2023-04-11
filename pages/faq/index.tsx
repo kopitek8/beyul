@@ -9,7 +9,7 @@ const Faq: NextPage = () => {
         {
             key: 0,
             title: '1) How can I get more information about Bigu Life Festival?',
-            content: `We produce comprehensive information for each of our treks. Once you’ve decided, please visit the website for a trek itinerary. They contain a detailed day by day route and other information which may help answer any questions you may have. Our What is included / What is not included text also provides a lot of information. You can discuss anything about the nature of the trek with our Beyul team, who can give you practical first hand advice. Please call +977 9808039603 for further information. I use whatsapp as well.
+            content: `We produce comprehensive information for each of our treks. Once you’ve decided, please visit the website for a trek itinerary. They contain a detailed day by day route and other information which may help answer any questions you may have. Our What is included / What is not included text also provides a lot of information. You can discuss anything about the nature of the trek with our Beyül team, who can give you practical first hand advice. Please call +977 9808039603 for further information. I use whatsapp as well.
 `,
         },
         {
