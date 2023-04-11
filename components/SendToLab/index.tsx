@@ -49,18 +49,18 @@ const SendToLab = () => {
         values,
         process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY as string)
         .then(() => {
-          toast('We appreciate your interest. We will get back to you shortly.',
+          toast('Thank you. We have sent a welcome video to your inbox (Please check your spam folder as well).',
             {
               hideProgressBar: true,
-              autoClose: 5000,
+              autoClose: 3500,
               type: 'success'
             })
           handleCloseClick();
         }, () => {
-          toast('We could not receive your interest at the moment. Please try again.',
+          toast('There seems to be a problem at the moment. Please try again later.',
             {
               hideProgressBar: true,
-              autoClose: 5000,
+              autoClose: 3500,
               type: 'error'
             })
         });

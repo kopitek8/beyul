@@ -35,7 +35,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Beyul</title>
+        <title>Beyül</title>
         <meta
           name='description'
           content='Beyül is a destination development social enterprise based in London, UK.
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
         <meta property="og:image:type" content="img/jpg" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="169" />
-        <meta property="og:site_name" content="Beyul" />
+        <meta property="og:site_name" content="Beyül" />
         <link rel="canonical" href="https://bigulifefestival.com" />
         <meta name="robots" content="index,follow" />
         <meta name="twitter:title" content="Bigu Life Festival" />

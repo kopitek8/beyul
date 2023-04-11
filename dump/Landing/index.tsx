@@ -36,7 +36,7 @@ const Landing: React.FC = () => {
     <div>
       <Parallax pages={2} className={styles.banner}>
         <ParallaxLayer speed={0.5} className={styles.cloud}>
-          <h1>Welcome to Beyul</h1>
+          <h1>Welcome to Beyül</h1>
           <ParallaxLayer offset={1} speed={0.5} className={styles.person}>
             <h3>Body content ...</h3>
           </ParallaxLayer>

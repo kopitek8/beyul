@@ -8,7 +8,7 @@ const Help: NextPage = () => {
         <div className={styles.container}>
             <Head>
                 <title>Help</title>
-                <meta name='description' content='Help page of Beyul website' />
+                <meta name='description' content='Help page of Beyül website' />
                 <link rel='icon' href='/favicon.png' />
             </Head>
 
