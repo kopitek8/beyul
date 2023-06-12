@@ -20,41 +20,41 @@ const Landing: React.FC = () => {
   const [width] = useDeviceSize();
   const [offsetY] = useCustomParallax();
 
-  // const renderMaxView = () => {
-  //   return (
-  //     <div>
-  //       <div style={{ transform: `translateY(${offsetY * 0.1}px)` }}>
-  //         <Image src={top} alt={'Sky and stars'} />
-  //       </div>
-  //       <div
-  //         className={styles.village}
-  //         style={{ transform: `translateY(-${offsetY * 0.15}px)` }}
-  //       >
-  //         <Image src={middle} alt={'Village'} />
-  //       </div>
-  //       <div
-  //         className={styles.biguCloud}
-  //         style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
-  //       >
-  //         <Image src={logo} alt={'Bugy Life Festival'} />
-  //       </div>
-  //       <div
-  //         className={styles.yetiPost}
-  //         style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
-  //       >
-  //         <Image src={post} alt={'Beware of yeti'} />
-  //       </div>
-  //       <div
-  //         className={styles.stepstones}
-  //         style={{ transform: `translateY(-${offsetY * 0.16}px)` }}
-  //       >
-  //         <Image src={bottom} alt={'Steps and stone'} />
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
   const renderMaxView = () => {
+    return (
+      <div>
+        <div style={{ transform: `translateY(${offsetY * 0.1}px)` }}>
+          <Image src={top} alt={'Sky and stars'} />
+        </div>
+        <div
+          className={styles.village}
+          style={{ transform: `translateY(-${offsetY * 0.15}px)` }}
+        >
+          <Image src={middle} alt={'Village'} />
+        </div>
+        <div
+          className={styles.biguCloud}
+          style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+        >
+          <Image src={logo} alt={'Bigu Life Festival'} />
+        </div>
+        <div
+          className={styles.yetiPost}
+          style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
+        >
+          <Image src={post} alt={'Beware of yeti'} />
+        </div>
+        <div
+          className={styles.stepstones}
+          style={{ transform: `translateY(-${offsetY * 0.16}px)` }}
+        >
+          <Image src={bottom} alt={'Steps and stone'} />
+        </div>
+      </div>
+    );
+  };
+
+  const renderMaxViewNonParallax = () => {
     return (
       <Image src={banner} alt={'Beyül banner'} />
     )
