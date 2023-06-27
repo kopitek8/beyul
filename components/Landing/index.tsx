@@ -10,6 +10,12 @@ import middle from '../../public/assets/Parallax/middle.png';
 import bottom from '../../public/assets/Parallax/bottom.png';
 import post from '../../public/assets/Parallax/post.png';
 
+import mobTop from '../../public/assets/MobileParallax/top.png';
+import mobMiddle from '../../public/assets/MobileParallax/middle.png';
+import mobLogo from '../../public/assets/MobileParallax/logo.png';
+import mobBottomLeft from '../../public/assets/MobileParallax/bottom-left.png';
+import mobBottomRight from '../../public/assets/MobileParallax/bottom-right.png';
+
 import responsiveBanner from '../../public/assets/banner-mobile.jpg';
 import banner from '../../public/assets/banner.jpg';
 
@@ -62,7 +68,42 @@ const Landing: React.FC = () => {
 
   const renderResponsiveView = () => {
     return (
-      <Image src={responsiveBanner} alt={'Beyül mobile responsive banner'} />
+      // <Image src={responsiveBanner} alt={'Beyül mobile responsive banner'} />
+      <div>
+        <div style={{ transform: `translateY(${offsetY * 0.1}px)` }}>
+          <Image src={mobTop} alt={'Sky and stars'} />
+        </div>
+        <div
+          className={styles.mobileVillage}
+          style={{ transform: `translateY(-${offsetY * 0.10}px)` }}
+        >
+          <Image src={mobMiddle} alt={'Village'} />
+        </div>
+        {/* <div
+          className={styles.mobileHills}
+          style={{ transform: `translateY(-${offsetY * 0.10}px)` }}
+        >
+          <Image src={mobTopMiddle} alt={'Village'} />
+        </div> */}
+        <div
+          className={styles.mobileBiguCloud}
+          style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+        >
+          <Image src={logo} alt={'Bigu Life Festival'} />
+        </div>
+        <div
+          className={styles.mobileBottomLeft}
+          style={{ transform: `translateY(-${offsetY * 0.15}px)` }}
+        >
+          <Image src={mobBottomLeft} alt={'Beware of yeti'} />
+        </div>
+        <div
+          className={styles.mobileBottomRight}
+          style={{ transform: `translateY(-${offsetY * 0.15}px)` }}
+        >
+          <Image src={mobBottomRight} alt={'Steps and stone'} />
+        </div>
+      </div>
     );
   }
 
