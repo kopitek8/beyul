@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import styles from '../../styles/Journey.module.css';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import journey from '../../public/assets/itinerary.jpg';
 import responsiveJourney from '../../public/assets/itinerary-mobile.jpg';
@@ -31,7 +31,7 @@ const Journey: React.FC = () => {
     setShowDay4(false)
   };
 
-  const renderModal = (title: String, imageSrc) => {
+  const renderModal = (title: String, imageSrc: StaticImageData) => {
 
     return (
       <div className={styles.topModalContainer}>
