@@ -1,0 +1,86 @@
+/* .itinerary {
+  flex: 1;
+  background-image: url('../public/assets/itinerary.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 50rem;
+}
+
+@media (orientation: landscape) {
+  .itinerary {
+    background-image: url('../public/assets/itinerary.jpg');
+  }
+}
+
+@media (orientation: portrait) {
+  .itinerary {
+    background-image: url('../public/assets/itinerary-mobile.jpg');
+  }
+} */
+
+.wrapper {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.item1 {
+  position: absolute;
+  bottom: 28%;
+  left: 18%;
+  width: 28%;
+  height: 3%;
+  rotate: -31deg;
+  background-color: rgba(0, 0, 0, .5);
+  /* clip-path: polygon(0% 80%, 14% 85%, 44% 72%, 44% 59%); */
+
+  border: solid 4px #000;
+  border-color: transparent transparent #000 transparent;
+  border-radius: 0 0 90% 50%/60px;
+}
+
+.item2 {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 12%;
+  height: 8%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.item3 {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  width: 12%;
+  height: 8%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.item4 {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  width: 12%;
+  height: 8%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.item5 {
+  position: absolute;
+  left: 22%;
+  top: 38%;
+  width: 14%;
+  height: 2%;
+  background-color: rgba(237, 16, 16);
+}

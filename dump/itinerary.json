@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "title": "Day 1",
+    "shape": "poly",
+    "name": "1",
+    "fillColor": "#eab54d4d",
+    "strokeColor": "red",
+    "coords": [
+        291,
+        723,
+        520,
+        689,
+        619,
+        638,
+        679,
+        567,
+        691,
+        471
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Day 2",
+    "shape": "poly",
+    "name": "2",
+    "fillColor": "#eab54d4d",
+    "strokeColor": "red",
+    "coords": [
+        643,
+        507,
+        688,
+        434,
+        527,
+        434,
+        551,
+        265,
+        628,
+        244
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Day 3",
+    "shape": "poly",
+    "name": "3",
+    "fillColor": "#eab54d4d",
+    "strokeColor": "red",
+    "coords": [
+        573,
+        265,
+        659,
+        148,
+        791,
+        173
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Day 4",
+    "shape": "poly",
+    "name": "4",
+    "fillColor": "#eab54d4d",
+    "strokeColor": "red",
+    "coords": [
+        813,
+        136,
+        872,
+        181,
+        780,
+        318
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Day 5",
+    "shape": "poly",
+    "name": "5",
+    "fillColor": "#eab54d4d",
+    "strokeColor": "red",
+    "coords": [
+        774,
+        312,
+        964,
+        308,
+        1060,
+        413
+    ]
+  }
+]

@@ -104,8 +104,8 @@ const Home: NextPage = () => {
           <Plan />
           <Journey />
           <SendToLab />
-          {/* <JoinUs /> */}
           <Cloud />
+          {/* <JoinUs /> */}
         </div>
       )}
     </div>
