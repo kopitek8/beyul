@@ -1,45 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { IoCloseOutline } from "react-icons/io5";
-
+import React, { useState } from 'react';
 import styles from '../../styles/Modal.module.css';
 
-// interface ModalInterface {
-//     show: boolean;
-//     onClose: (e: Event) => void;
-//     children: React.ReactNode;
-//     title: string;
-// }
+import { IoCloseOutline } from "react-icons/io5";
 
-const Modal = (props: { show: any; onClose: any; title: any; children: any; }) => {
-    const { show, onClose, title, children } = props;
 
-    const [isBrowser, setIsBrowser] = useState(false);
+const Modal = (props: { display: boolean, title: any; children: any; }) => {
+    const { display, title, children } = props;
 
-    useEffect(() => {
-        setIsBrowser(true);
-    }, []);
+    const [show, setShow] = useState(false);
 
-    const handleCloseClick = (e: any) => {
-        e.preventDefault();
-        onClose(e);
+    const handleCloseClick = () => {
+        setShow(!show);
     };
 
+    console.log('SHOW???')
 
-    const renderModal = show ? (
-        <div className={styles.container}>
+    return (
+        display &&
+        (<div className={styles.topModalContainer}>
             <div className={styles.modalContainer}>
                 <div className={styles.buttonContainer}>
-                    <span>{title}</span>
-                    <IoCloseOutline size={32} onClick={handleCloseClick} />
+                    <h4>{title}</h4>
+                    <IoCloseOutline onClick={handleCloseClick} className={styles.closeButton} />
                 </div>
                 <div className={styles.contentContainer}>
                     {children}
                 </div>
             </div>
-        </div>
-    ) : null;
-
-    { isBrowser ? renderModal : null }
-};
+        </div>)
+    )
+}
 
 export default Modal;

@@ -4,6 +4,8 @@
   overflow-x: hidden;
 }
 
+/* NORMAL PARALLAX */
+
 .village {
   margin-top: -15.6%;
 }
@@ -21,6 +23,8 @@
 .stepstones {
   margin-top: -79.8%;
 }
+
+/* CLOUDS */
 
 .cloudContainer {
   height: 100vh;
@@ -54,14 +58,26 @@
   overflow-y: hidden;
 }
 
-/* @media (orientation: portrait) {
-  .wrapper {
-    background-image: url('../public/assets/banner-mobile.jpg');
-    display: flex;
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-} */
+/* MOBILE RESPONSIVE PARALLAX */
+
+.mobileVillage {
+  margin-top: -15.6%;
+}
+
+.mobileHills {}
+
+.mobileBiguCloud {
+  margin: -71.2% 0% 0% 0.2%;
+  padding: 20%;
+  z-index: 100;
+}
+
+.mobileBottomLeft {
+  padding: 41.5%;
+  margin: -70.5% 8% 0% -42%;
+}
+
+.mobileBottomRight {
+  padding: 40%;
+  margin: -143% -40% 0% -42%;
+}
