@@ -4,7 +4,7 @@ import styles from '../../styles/Modal.module.css';
 import { IoCloseOutline } from "react-icons/io5";
 
 
-const Modal = (props: { title: any; children: any; }) => {
+const Modal = (props: { display: boolean, title: any; children: any; }) => {
     const { display, title, children } = props;
 
     const [show, setShow] = useState(false);
