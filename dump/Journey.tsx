@@ -5,11 +5,8 @@ import Image from 'next/image';
 import journey from '../../public/assets/itinerary.jpg';
 import responsiveJourney from '../../public/assets/itinerary-mobile.jpg';
 
-import useDeviceSize from '../../utilities/useDeviceSize';
+import useDeviceSize from '../utilities/useDeviceSize';
 import Head from 'next/head';
-
-import Mapper from './Mapper';
-import Tooltip from '../Tooltip';
 
 const Journey: React.FC = () => {
   // const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -80,11 +77,6 @@ const Journey: React.FC = () => {
             onMouseOver={
               () => {
                 console.log("Mouse overed")
-                return (
-                  <Tooltip content="Hello, I'm a tooltip" direction="right">
-                    <button>I'm a button</button>
-                  </Tooltip>
-                )
               }
             }
             href=""
